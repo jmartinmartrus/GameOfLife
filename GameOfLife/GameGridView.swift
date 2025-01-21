@@ -26,6 +26,7 @@ struct GameGridView<ViewModel: GameGridViewModelType>: View {
                             .foregroundStyle(themeManager.theme.textPrimaryColor)
                         Slider(value: $viewModel.timeMultiplier,
                                in: 0.5...10.0)
+                        .tint(themeManager.theme.primaryColor)
                         Spacer()
                         Text("Generation: \(viewModel.generation)")
                             .font(.system(size: 12))
